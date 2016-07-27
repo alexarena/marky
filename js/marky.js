@@ -61,10 +61,15 @@ function markyCode(){
 }
 function markyList(){
   var currentFieldValue = document.getElementById(selectedDiv).value;
-  var listItems = currentFieldValue.split(/\r\n|\r|\n/g);
+  var listItems = selectedText.split(/\r\n|\r|\n/g);
   var markdownList = ''
   for(var i=0; i<listItems.length; i++){
-    markdownList += '- ' + listItems[i] + '\n'
+    if(listItems[i] != ""){
+      markdownList += '- ' + listItems[i] + '\n'
+    }
+    else{
+      markdownList += '\n'
+    }
   }
 
   var newFieldValue = currentFieldValue.replace(selectedText, markdownList);
@@ -75,7 +80,6 @@ function markyNumberedList(){
   var currentFieldValue = document.getElementById(selectedDiv).value;
   var listItems = selectedText.split(/\r\n|\r|\n/g);
   var markdownList = ''
-  console.log(listItems)
   var counter = 1;
   for(var i=0; i<listItems.length; i++){
     if(listItems[i] != ""){
@@ -88,8 +92,41 @@ function markyNumberedList(){
     }
   }
 
-  console.log("MD LIST: " + markdownList)
-
   var newFieldValue = currentFieldValue.replace(selectedText, markdownList);
   markyUpdatePage(newFieldValue);
+}
+
+function saveAsMD(divID){
+    var textToSave = document.getElementById(divID).value;
+    var textToSaveAsBlob = new Blob([textToSave], {type:"text/md"});
+    var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+    var fileNameToSaveAs = 'marky_export.md'
+
+    var downloadLink = document.createElement("a");
+    downloadLink.download = fileNameToSaveAs;
+    downloadLink.innerHTML = "Download File";
+    downloadLink.href = textToSaveAsURL;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+
+    downloadLink.click();
+}
+
+function saveAsHTML(divID){
+    var textToSave = document.getElementById(divID).value;
+    textToSave = markdown.toHTML(textToSave);
+    textToSave = '<!doctype html>\n<head>\n<meta charset="utf-8">\n<title>Marky Export</title>\n</head>\n<body>\n' + textToSave + '\n</body>\n</html>'
+
+    var textToSaveAsBlob = new Blob([textToSave], {type:"text/md"});
+    var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+    var fileNameToSaveAs = 'marky_export.html'
+
+    var downloadLink = document.createElement("a");
+    downloadLink.download = fileNameToSaveAs;
+    downloadLink.innerHTML = "Download File";
+    downloadLink.href = textToSaveAsURL;
+    downloadLink.style.display = "none";
+    document.body.appendChild(downloadLink);
+
+    downloadLink.click();
 }
