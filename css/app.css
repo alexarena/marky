@@ -1,0 +1,306 @@
+.leader-custom-body{
+   min-width:800px; /* suppose you want minimun width of 1000px */
+}
+
+.body-spacer{
+  height: 100px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer-link{
+  color: #777777;
+  font-weight: bold;
+}
+
+.footer-link:hover{
+  color: #323333;
+}
+
+.load-gif{
+  margin-top: 200px;
+  height: 25px;
+  width: 25px;
+}
+
+.donut-inner {
+   margin-top: -137px;
+   margin-bottom: 100px;
+   color: #777777;
+}
+
+.jumbotron-no-bottom-margin{
+  margin-bottom: 0px !important;
+}
+
+.tableDividerText{
+  color: #DDDDDD;
+}
+
+.left-panel-custom-pad{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.right-panel-custom-pad{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+  .left-panel-custom-pad{
+    padding-left: 0px !important;
+    padding-right: 10px !important;
+  }
+
+  .right-panel-custom-pad{
+    padding-left: 10px !important;
+    padding-right: 0px !important;
+  }
+
+}
+
+.progress-label {
+    float: left;
+    margin-right: 1em;
+    font-weight: bold;
+    width: 70px;
+}
+.progress-bar-draft {
+      background-color: #777777 !important;
+}
+
+.supersmall-btn{
+  margin: 0px;
+  padding:
+}
+
+.label-md {
+  font-size: 12px !important;
+}
+
+.squished {
+  margin-top: 10px;
+}
+
+.export-btn-gap {
+  margin-top: 6px;
+}
+
+.label-light{
+  font-weight: normal;
+}
+
+.huge-icon{
+  font-size: 5rem;
+  vertical-align: middle;
+}
+
+.voting-is-live{
+  color: #CEEDC8;
+}
+
+.tiny-list-group {
+  width: 260px;
+}
+
+.footer {
+  padding-left: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 90px;
+  background-color: #F8F8F8;
+  border-style: solid;
+  border-width: thin;
+  border-left: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
+  border-color: #E7E7E7;
+  padding-top: 25px;
+  color: #777777;
+  font-size: 12px;
+}
+
+
+.lightly-padded-panel{
+}
+
+.super-squished {
+  margin-top: 5rem;
+}
+
+.squished-bot {
+  margin-bottom: 10px;
+}
+
+.btn {
+  border-radius:6px;
+}
+
+a:link, a:active, a:visited, a:hover {
+  text-decoration: none;
+}
+
+.home-logo {
+  max-width: 10rem;
+}
+
+body {
+  background-color: #F4F4F4;
+  margin-bottom: 90px;
+}
+
+.navbar-desktop {
+  background-color: #8D8D8D;
+}
+
+.navbar-default .navbar-text {
+  color: #333;
+}
+
+.padded-panel {
+  margin-right:5%;
+  margin-left:5%;
+}
+
+.list-check {
+  display: inline;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.navbar-inverse {
+  background-color: #1A1A1A;
+}
+
+.mobile-nav > li {
+  border: medium none;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  background-color: #232323;
+  color: #F6F6F6;
+}
+
+#changeInBehavior,#customerDelight,#businessImpact {
+  margin-top: 10px;
+}
+
+.denied-icon {
+  margin-top: 10rem;
+  color: #A81E2E;
+  font-size: 10rem;
+}
+
+.no-left-pad{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.divider {
+  height: 1px;
+  width:100%;
+  display:block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.scrolly-editor-container{
+    width: 100%;
+    background-color: #F8F8F8;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #E7E7E7;
+
+    position: fixed;
+    top: 0;
+    z-index: 99 !important;
+
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(173,173,173,0.81);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(173,173,173,0.81);
+  box-shadow: 0px 4px 5px 0px rgba(173,173,173,0.81);
+}
+
+.mobile-inline-toolbar{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.btn-separator {
+color: #E7E7E7;
+margin-left: 5px;
+margin-right: 5px;
+}
+
+.table-custom {
+  background: #F9F9F9;
+}
+
+.homepage-button {
+  color: #DDDDDD;
+}
+
+.homepage-button:hover {
+  color: #007496;
+}
+
+.homepage-button-filled-default {
+  color: #007496;
+}
+
+.homepage-button-filled-default:hover {
+  color: #DDDDDD;
+}
+
+.btn-feedback {
+  color: #FEFEFE;
+  background: #66AFDF;
+}
+.spaced-table{
+   text-align: justify;
+}
+.toolbarButton{
+  font-size: 2rem;
+}
+.notification-center {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.my-modal{
+  margin-top: 20rem;
+}
+
+.busValScaleLabel{
+  margin-top: 1rem;
+  font-size: 12px;
+  font-style: italic;
+}
+.busValScaleLabelHome{
+  font-style: italic;
+}
+
+td {
+    max-width: 70rem;
+}
+
+.styleAsLink {
+  cursor : pointer;
+}
